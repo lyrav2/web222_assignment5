@@ -102,6 +102,7 @@ window.onload = function() {
       createDiv.classList.add('game');
       createDiv.id = e[i].id.toString();
       imageNode.src = 'images/game/' + e[i].id.toString() + '.jpg';
+      imageNode.alt = e[i].name + ' box art';
 
       createTitle.appendChild(gameTitle);
       createPlatform.appendChild(gamePlatform);
