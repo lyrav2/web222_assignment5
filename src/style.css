@@ -1,0 +1,166 @@
+/* Add any CSS you need to this file. */
+
+/* import google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+:root {
+  --text-primary: #defcf9;
+  --text-secondary: #f0f5f9;
+  --text-primary-dark: #defcf9;
+  --text-secondary-dark: #f0f5f9;
+  --bg-primary: #51626b;
+  --bg-secondary: #323232;
+  --bg-navbar: #1e2022;
+}
+
+* {
+  font-family: Montserrat, Verdana, sans-serif;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--text-secondary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-secondary);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 4fr 2fr 2fr;
+  column-gap: 1em;
+  background-color: var(--bg-secondary);
+}
+
+.title {
+  font-size: 28px;
+}
+
+.page {
+  text-align: center;
+}
+
+.search {
+  background: var(--bg-secondary);
+  transition: box-shadow 0.1s;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 15px;
+  display: flex;
+}
+
+.search:hover {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: var(--bg-navbar);
+  column-gap: 1em;
+  row-gap: 50px;
+  padding: 1em;
+  text-align: center;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr 3fr;
+  background-color: var(--bg-secondary);
+  column-gap: 1em;
+  padding: 1em;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.cart p {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.button {
+  border: none;
+  border-radius: 10px;
+  color: var(--text-primary);
+  background-color: var(--bg-navbar);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-radius: 10px;
+  background-color: var(--bg-primary);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 1em;
+  column-gap: 1em;
+  padding: 2em;
+  margin: 1em;
+}
+
+.wrapper h3 {
+  text-align: center;
+}
+
+.game {
+  border-radius: 25px;
+  border: 2px solid black;
+}
+
+.game img {
+  width: auto;
+  max-height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.socialmedia {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.hidden {
+  display: none;
+}
+
+.currentselection {
+  background-color: var(--bg-primary);
+}
