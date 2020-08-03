@@ -67,7 +67,6 @@ a {
   margin: 0 auto;
   position: relative;
   padding-top: 15px;
-  display: flex;
 }
 
 .search:hover {
@@ -89,7 +88,7 @@ a {
 
 .footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 2fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr 2fr 2fr;
   background-color: var(--bg-secondary);
   column-gap: 1em;
   padding: 1em;
@@ -97,6 +96,27 @@ a {
 
 .footer p {
   text-align: center;
+}
+
+.contactform .text {
+  width: 90%;
+}
+
+#question,
+#comments,
+#order {
+  display: inline;
+}
+
+.contactform textarea {
+  width: 90%;
+  height: auto;
+}
+
+.subscribe {
+  text-align: center;
+  align-self: center;
+  justify-self: end;
 }
 
 .cart p {
@@ -153,8 +173,7 @@ a {
 }
 
 .socialmedia {
-  display: table-cell;
-  vertical-align: middle;
+  align-self: center;
   text-align: right;
 }
 

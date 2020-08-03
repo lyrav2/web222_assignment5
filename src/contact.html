@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://kit.fontawesome.com/713844f3f2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo"/></a>
+        </div>
+        <div class="title">
+          <a href="index.html"><h1>ABXY GAMES STORE</h1></a>
+        </div>
+        <div class="page" id="current">
+          <h3>Contact Us</h3>
+        </div>
+        <!--Form is here for stylistic purposes-->
+        <div class="search">
+          <form action="/search" method="POST">
+            <input id="search" type="text" placeholder="Search for games..." />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div class="cart">
+          <a href="#"><h4>Cart:</h4></a>
+          <p>0 items</p>
+          <br />
+          <p>Total: $0.00 CAD</p>
+        </div>
+        <div class="avatar">
+          <a href="#"><img src="images/profile.png" alt="user profile picture"/></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper" id="wrapper">
+        <div></div>
+        <div>
+          <h3>
+            Have a question? Contact us via e-mail and we'll get back to you within 5 business days.
+          </h3>
+          <img src="images/logo2.png" />
+        </div>
+        <div class="contactform">
+          <form id="contactform" action="https://httpbin.org/post" method="POST">
+            <input type="text" name="name" class="text" placeholder="Your name" required /> *
+            <input type="email" name="_replyto" class="text" placeholder="Your email" required /> *
+            <input type="text" name="address" class="text" placeholder="Your address" required /> *
+            <input
+              type="text"
+              name="city"
+              class="text"
+              list="cities"
+              autocomplete="on"
+              placeholder="Your city"
+              required
+            />
+            *
+            <input
+              type="text"
+              name="postalcode"
+              class="text"
+              pattern="^[ABCEGHJKLMNPRSTVXYabceghjklmnprstvxy]{1}\d{1}[A-Za-z]{1}\d{1}[A-Za-z]{1}\d{1}$"
+              placeholder="Your postal code"
+              required
+            />
+            * <br />
+
+            <input
+              type="radio"
+              id="question"
+              name="typeof"
+              value="question"
+              onclick="hideInput()"
+            />
+            <label for="question">Question</label>
+            <input
+              type="radio"
+              id="comments"
+              name="typeof"
+              value="comments"
+              onclick="hideInput()"
+            />
+            <label for="comments">Comments</label>
+            <input type="radio" id="order" name="typeof" value="order" onclick="showInput()" />
+            <label for="order">Order Problem</label>
+            <input
+              type="text"
+              name="orderid"
+              class="hidden"
+              placeholder="Order Number"
+              id="orderform"
+            />
+            <textarea name="message" placeholder="What would you like to tell us?"></textarea> *
+            <input type="hidden" name="_subject" value="Jimmy" />
+            <button type="submit">Send email</button>
+          </form>
+          <datalist id="cities">
+            <option value="Toronto"> </option>
+            <option value="Montreal"> </option>
+            <option value="Calgary"> </option>
+            <option value="Ottawa"> </option>
+            <option value="Edmonton"> </option>
+            <option value="Mississauga"> </option>
+            <option value="Winnipeg"> </option>
+            <option value="Vancouver"> </option>
+            <option value="Brampton"> </option>
+            <option value="Hamilton"> </option>
+          </datalist>
+          <p>Fields denoted with an asterisk are required.</p>
+        </div>
+        <div></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="name">
+          <a href="index.html"><p>ABXY Games Store</p></a>
+        </div>
+        <div class="about">
+          <a href="#"><p>About Us</p></a>
+        </div>
+        <div class="privacy">
+          <a href="#"><p>Privacy Policy</p></a>
+        </div>
+        <div class="contact">
+          <a href="contact.html"><p>Contact Us</p></a>
+        </div>
+        <div class="info">
+          <p>Made by <a href="https://github.com/lyrav2">Jimmy Liu</a> for WEB222</p>
+        </div>
+        <div class="subscribe">
+          <form action="https://formspree.io/myynopdg" method="POST">
+            <label>
+              Subscribe to our newsletter!
+              <input
+                id="search"
+                type="email"
+                valid
+                placeholder="Your email here..."
+                name="_replyto"
+              />
+            </label>
+            <button type="submit"><i class="fas fa-envelope-square"></i></button>
+          </form>
+        </div>
+        <div class="socialmedia">
+          <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="contact.js" type="text/javascript"></script>
+  </body>
+</html>

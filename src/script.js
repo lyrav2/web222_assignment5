@@ -81,7 +81,7 @@ var library = [
 
 window.onload = function() {
   // get variables for buttons
-  var allgames = document.getElementById('all');
+  var allgames = document.getElementById('allgames');
   var pc = document.getElementById('pc');
   var playstation = document.getElementById('playstation');
   var xbox = document.getElementById('xbox');
