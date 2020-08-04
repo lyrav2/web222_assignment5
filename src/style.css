@@ -154,6 +154,15 @@ a {
   text-align: center;
 }
 
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1em;
+  column-gap: 1em;
+  padding: 2em;
+  margin: 1em;
+}
+
 .game {
   border-radius: 25px;
   border: 2px solid black;
